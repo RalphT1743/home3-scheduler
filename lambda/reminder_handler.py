@@ -9,11 +9,11 @@ def handler(event, context):
   """ Reminder for Appointments  """
   request_id = getattr(context, "aws_request_id", "unknown")
 
-loggger.info(json.dumps({
+logger.info(json.dumps({
   "service": "home3-scheduler",
   "event": "lambda_invoked",
   "requestId": request_id, 
-  "timestamp": datetime.now(timezone.utc)isoformat(),
+  "timestamp": datetime.now(timezone.utc).isoformat(),
   "payload": event
 }))
 
