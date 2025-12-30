@@ -12,6 +12,7 @@ def handler(event, context):
 logger.info(json.dumps({
   "service": "home3-scheduler",
   "event": "lambda_invoked",
+  "eventType": event_type,
   "requestId": request_id, 
   "timestamp": datetime.now(timezone.utc).isoformat(),
   "payload": event
