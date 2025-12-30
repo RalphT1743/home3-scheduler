@@ -4,16 +4,15 @@ Care facilities currently manage appointments across multiple homes, clients, an
 Manual reminder systems frequently fail, leading to missed appointments, operational disruption,
 and increased costs. This project addresses that reliability gap through automated, observable scheduling. 
 
-Architecture
+Architecture-Stack
+AWS Service Used:
+Lambda - Executes reminder processing logic with structured logging.
+Eventbridge - Triggers reminders on scheduled periods.
+DynamoDB - Stores appointment data
+SNS - Delivers notifications to staff & clients
+CloudWatch - Centralized logging and metrics for appointments
 
-Core Services:
-- AWS Lambda - Executes reminder processing logic with structured logging.
-- Amazon Eventbridge - Triggers reminders on schedule
-- Amazon DynamoDB - Stores appointment data
-- Amazon SNS - Delivers notifications to staff & clients
-- Amazon CloudWatch - Centralized logging and metrics
-
-Design Principles: Observability over features, Failure-first design, Support-oriented debugging
+Design Principles: Observability over features, Failure-first design
 
 Core Workflow:
 1. EventBridge rule triggers at scheduler reminder time
