@@ -24,4 +24,11 @@ Core Workflow:
 Failure Scenarios: 
 - Eventbridge misconfig - Incorrect cron expression prevents trigger
 - IAM permissions gaps - Lambda is unable to publish to SNS.
-- Silent failures - Missing observability prevents detection. 
+- Silent failures - Missing observability prevents detection.
+
+Workflow of appointment feature
+1. Create appointment --> status: scheduled
+2. Edit appointment --> old deleted, new added
+3. Cancelled appointment --> status: cancelled
+4. Failed appointment --> status: failed, error logged and evaluated for cause.
+5. 
