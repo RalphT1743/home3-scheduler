@@ -7,11 +7,11 @@ and increased costs. This project addresses that reliability gap through automat
 Architecture-Stack
 
 AWS Service Used:
--Lambda: Executes reminder processing logic with structured logging.
--Eventbridge: Triggers reminders on scheduled periods.
--DynamoDB: Stores appointment data
--SNS: Delivers notifications to staff & clients
--CloudWatch: Centralized logging and metrics for appointments
+- Lambda: Executes reminder processing logic with structured logging.
+- Eventbridge: Triggers reminders on scheduled periods.
+- DynamoDB: Stores appointment data
+- SNS: Delivers notifications to staff & clients
+- CloudWatch: Centralized logging and metrics for appointments
 
 Design Principles: Observability over features, Failure-first design
 
