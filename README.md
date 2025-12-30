@@ -1,6 +1,6 @@
 Home3-Scheduler
 
-Care facilities currently manage appointments across multiple homes, clients, and caregivers manually.
+Built for family-owned care facilities, with the goal of minimizing manual overload and maintain excellete operational efficiency. 
 Manual reminder systems frequently fail, leading to missed appointments, operational disruption,
 and increased costs. This project addresses that reliability gap through automated, observable scheduling. 
 
